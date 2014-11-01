@@ -7,6 +7,6 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.use("superchris:angular", "client");
+  api.use("superchris:angular@>=1.3.2", "client");
   api.addFiles('bower-angular-route/angular-route.js');
 });
