@@ -1,17 +1,12 @@
 Package.describe({
-  name: 'superchris:angular-router',
-  summary: ' /* Fill me in! */ ',
-  version: '1.0.0',
-  git: ' /* Fill me in! */ '
+  name: 'superchris:angular-route',
+  summary: 'A simple client side routing framework for angular',
+  version: '1.3.2',
+  git: 'https://github.com/superchris/meteor-angular-route.git'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.addFiles('superchris:angular-router.js');
-});
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('superchris:angular-router');
-  api.addFiles('superchris:angular-router-tests.js');
+  api.use("superchris:angular", "client");
+  api.addFiles('bower-angular-route/angular-route.js');
 });
